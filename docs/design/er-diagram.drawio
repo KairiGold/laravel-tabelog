@@ -1,0 +1,73 @@
+<mxfile host="app.diagrams.net" version="24.7.5" type="device">
+  <diagram name="6. ER図" id="er-diagram">
+    <mxGraphModel dx="1200" dy="800" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1440" pageHeight="1400" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="e_categories" value="&lt;b style=&quot;font-size:14px;&quot;&gt;categories（カテゴリ）&lt;/b&gt;&lt;hr size=&quot;1&quot; style=&quot;margin:4px 0;&quot;/&gt;&lt;b&gt;PK id&lt;/b&gt;&lt;br/&gt;name&lt;br/&gt;created_at / updated_at" style="rounded=0;whiteSpace=wrap;html=1;align=left;verticalAlign=top;spacingLeft=10;spacingTop=8;spacingRight=8;fontSize=12;fillColor=#dae8fc;strokeColor=#6c8ebf;fontFamily=Meiryo,Helvetica;" vertex="1" parent="1">
+          <mxGeometry x="60" y="40" width="260" height="104" as="geometry" />
+        </mxCell>
+        <mxCell id="e_admins" value="&lt;b style=&quot;font-size:14px;&quot;&gt;admins（管理者）&lt;/b&gt;&lt;hr size=&quot;1&quot; style=&quot;margin:4px 0;&quot;/&gt;&lt;b&gt;PK id&lt;/b&gt;&lt;br/&gt;name&lt;br/&gt;&lt;b&gt;UK email&lt;/b&gt;&lt;br/&gt;email_verified_at&lt;br/&gt;password&lt;br/&gt;remember_token&lt;br/&gt;created_at / updated_at" style="rounded=0;whiteSpace=wrap;html=1;align=left;verticalAlign=top;spacingLeft=10;spacingTop=8;spacingRight=8;fontSize=12;fillColor=#dae8fc;strokeColor=#6c8ebf;fontFamily=Meiryo,Helvetica;" vertex="1" parent="1">
+          <mxGeometry x="400" y="40" width="260" height="184" as="geometry" />
+        </mxCell>
+        <mxCell id="e_companies" value="&lt;b style=&quot;font-size:14px;&quot;&gt;companies（会社概要）&lt;/b&gt;&lt;hr size=&quot;1&quot; style=&quot;margin:4px 0;&quot;/&gt;&lt;b&gt;PK id&lt;/b&gt;&lt;br/&gt;name&lt;br/&gt;postal_code&lt;br/&gt;address&lt;br/&gt;representative&lt;br/&gt;business&lt;br/&gt;established_on&lt;br/&gt;capital&lt;br/&gt;number_of_employees&lt;br/&gt;created_at / updated_at" style="rounded=0;whiteSpace=wrap;html=1;align=left;verticalAlign=top;spacingLeft=10;spacingTop=8;spacingRight=8;fontSize=12;fillColor=#dae8fc;strokeColor=#6c8ebf;fontFamily=Meiryo,Helvetica;" vertex="1" parent="1">
+          <mxGeometry x="740" y="40" width="280" height="244" as="geometry" />
+        </mxCell>
+        <mxCell id="e_terms" value="&lt;b style=&quot;font-size:14px;&quot;&gt;terms（利用規約）&lt;/b&gt;&lt;hr size=&quot;1&quot; style=&quot;margin:4px 0;&quot;/&gt;&lt;b&gt;PK id&lt;/b&gt;&lt;br/&gt;content&lt;br/&gt;created_at / updated_at" style="rounded=0;whiteSpace=wrap;html=1;align=left;verticalAlign=top;spacingLeft=10;spacingTop=8;spacingRight=8;fontSize=12;fillColor=#dae8fc;strokeColor=#6c8ebf;fontFamily=Meiryo,Helvetica;" vertex="1" parent="1">
+          <mxGeometry x="1100" y="40" width="260" height="104" as="geometry" />
+        </mxCell>
+        <mxCell id="e_shops" value="&lt;b style=&quot;font-size:14px;&quot;&gt;shops（店舗）&lt;/b&gt;&lt;hr size=&quot;1&quot; style=&quot;margin:4px 0;&quot;/&gt;&lt;b&gt;PK id&lt;/b&gt;&lt;br/&gt;&lt;b&gt;FK category_id&lt;/b&gt;&lt;br/&gt;name&lt;br/&gt;image&lt;br/&gt;description&lt;br/&gt;postal_code&lt;br/&gt;address&lt;br/&gt;phone_number&lt;br/&gt;low_price&lt;br/&gt;high_price&lt;br/&gt;opening_time&lt;br/&gt;closing_time&lt;br/&gt;seating_capacity&lt;br/&gt;created_at / updated_at" style="rounded=0;whiteSpace=wrap;html=1;align=left;verticalAlign=top;spacingLeft=10;spacingTop=8;spacingRight=8;fontSize=12;fillColor=#dae8fc;strokeColor=#6c8ebf;fontFamily=Meiryo,Helvetica;" vertex="1" parent="1">
+          <mxGeometry x="400" y="260" width="280" height="324" as="geometry" />
+        </mxCell>
+        <mxCell id="e_users" value="&lt;b style=&quot;font-size:14px;&quot;&gt;users（会員）&lt;/b&gt;&lt;hr size=&quot;1&quot; style=&quot;margin:4px 0;&quot;/&gt;&lt;b&gt;PK id&lt;/b&gt;&lt;br/&gt;name&lt;br/&gt;kana&lt;br/&gt;&lt;b&gt;UK email&lt;/b&gt;&lt;br/&gt;email_verified_at&lt;br/&gt;password&lt;br/&gt;postal_code&lt;br/&gt;address&lt;br/&gt;phone_number&lt;br/&gt;birthday&lt;br/&gt;occupation&lt;br/&gt;stripe_id&lt;br/&gt;pm_type&lt;br/&gt;pm_last_four&lt;br/&gt;trial_ends_at&lt;br/&gt;remember_token&lt;br/&gt;created_at / updated_at" style="rounded=0;whiteSpace=wrap;html=1;align=left;verticalAlign=top;spacingLeft=10;spacingTop=8;spacingRight=8;fontSize=12;fillColor=#dae8fc;strokeColor=#6c8ebf;fontFamily=Meiryo,Helvetica;" vertex="1" parent="1">
+          <mxGeometry x="60" y="620" width="280" height="384" as="geometry" />
+        </mxCell>
+        <mxCell id="e_reviews" value="&lt;b style=&quot;font-size:14px;&quot;&gt;reviews（レビュー）&lt;/b&gt;&lt;hr size=&quot;1&quot; style=&quot;margin:4px 0;&quot;/&gt;&lt;b&gt;PK id&lt;/b&gt;&lt;br/&gt;&lt;b&gt;FK shop_id&lt;/b&gt;&lt;br/&gt;&lt;b&gt;FK user_id&lt;/b&gt;&lt;br/&gt;score&lt;br/&gt;content&lt;br/&gt;created_at / updated_at" style="rounded=0;whiteSpace=wrap;html=1;align=left;verticalAlign=top;spacingLeft=10;spacingTop=8;spacingRight=8;fontSize=12;fillColor=#dae8fc;strokeColor=#6c8ebf;fontFamily=Meiryo,Helvetica;" vertex="1" parent="1">
+          <mxGeometry x="420" y="700" width="260" height="164" as="geometry" />
+        </mxCell>
+        <mxCell id="e_reservations" value="&lt;b style=&quot;font-size:14px;&quot;&gt;reservations（予約）&lt;/b&gt;&lt;hr size=&quot;1&quot; style=&quot;margin:4px 0;&quot;/&gt;&lt;b&gt;PK id&lt;/b&gt;&lt;br/&gt;&lt;b&gt;FK shop_id&lt;/b&gt;&lt;br/&gt;&lt;b&gt;FK user_id&lt;/b&gt;&lt;br/&gt;reserved_datetime&lt;br/&gt;number_of_people&lt;br/&gt;created_at / updated_at" style="rounded=0;whiteSpace=wrap;html=1;align=left;verticalAlign=top;spacingLeft=10;spacingTop=8;spacingRight=8;fontSize=12;fillColor=#dae8fc;strokeColor=#6c8ebf;fontFamily=Meiryo,Helvetica;" vertex="1" parent="1">
+          <mxGeometry x="720" y="700" width="260" height="164" as="geometry" />
+        </mxCell>
+        <mxCell id="e_favorites" value="&lt;b style=&quot;font-size:14px;&quot;&gt;favorites（お気に入り）&lt;/b&gt;&lt;hr size=&quot;1&quot; style=&quot;margin:4px 0;&quot;/&gt;&lt;b&gt;PK id&lt;/b&gt;&lt;br/&gt;&lt;b&gt;FK shop_id&lt;/b&gt;&lt;br/&gt;&lt;b&gt;FK user_id&lt;/b&gt;&lt;br/&gt;created_at / updated_at&lt;br/&gt;&lt;b&gt;UK (shop_id, user_id)&lt;/b&gt;" style="rounded=0;whiteSpace=wrap;html=1;align=left;verticalAlign=top;spacingLeft=10;spacingTop=8;spacingRight=8;fontSize=12;fillColor=#dae8fc;strokeColor=#6c8ebf;fontFamily=Meiryo,Helvetica;" vertex="1" parent="1">
+          <mxGeometry x="1020" y="700" width="260" height="144" as="geometry" />
+        </mxCell>
+        <mxCell id="e_subscriptions" value="&lt;b style=&quot;font-size:14px;&quot;&gt;subscriptions（サブスク契約）&lt;/b&gt;&lt;hr size=&quot;1&quot; style=&quot;margin:4px 0;&quot;/&gt;&lt;b&gt;PK id&lt;/b&gt;&lt;br/&gt;&lt;b&gt;FK user_id&lt;/b&gt;&lt;br/&gt;type&lt;br/&gt;&lt;b&gt;UK stripe_id&lt;/b&gt;&lt;br/&gt;stripe_status&lt;br/&gt;stripe_price&lt;br/&gt;quantity&lt;br/&gt;trial_ends_at&lt;br/&gt;ends_at&lt;br/&gt;created_at / updated_at" style="rounded=0;whiteSpace=wrap;html=1;align=left;verticalAlign=top;spacingLeft=10;spacingTop=8;spacingRight=8;fontSize=12;fillColor=#dae8fc;strokeColor=#6c8ebf;fontFamily=Meiryo,Helvetica;" vertex="1" parent="1">
+          <mxGeometry x="60" y="1000" width="280" height="244" as="geometry" />
+        </mxCell>
+        <mxCell id="e_subscription_items" value="&lt;b style=&quot;font-size:14px;&quot;&gt;subscription_items（サブスク明細）&lt;/b&gt;&lt;hr size=&quot;1&quot; style=&quot;margin:4px 0;&quot;/&gt;&lt;b&gt;PK id&lt;/b&gt;&lt;br/&gt;&lt;b&gt;FK subscription_id&lt;/b&gt;&lt;br/&gt;&lt;b&gt;UK stripe_id&lt;/b&gt;&lt;br/&gt;stripe_product&lt;br/&gt;stripe_price&lt;br/&gt;quantity&lt;br/&gt;created_at / updated_at" style="rounded=0;whiteSpace=wrap;html=1;align=left;verticalAlign=top;spacingLeft=10;spacingTop=8;spacingRight=8;fontSize=12;fillColor=#dae8fc;strokeColor=#6c8ebf;fontFamily=Meiryo,Helvetica;" vertex="1" parent="1">
+          <mxGeometry x="420" y="1000" width="300" height="184" as="geometry" />
+        </mxCell>
+        <mxCell id="rel1" value="所属する" style="edgeStyle=entityRelationEdgeStyle;rounded=0;html=1;fontSize=11;startArrow=ERone;startFill=0;endArrow=ERmany;endFill=0;strokeColor=#333333;" edge="1" parent="1" source="e_categories" target="e_shops">
+          <mxGeometry relative="1" as="geometry"></mxGeometry>
+        </mxCell>
+        <mxCell id="rel2" value="投稿される" style="edgeStyle=entityRelationEdgeStyle;rounded=0;html=1;fontSize=11;startArrow=ERone;startFill=0;endArrow=ERmany;endFill=0;strokeColor=#333333;" edge="1" parent="1" source="e_shops" target="e_reviews">
+          <mxGeometry relative="1" as="geometry"></mxGeometry>
+        </mxCell>
+        <mxCell id="rel3" value="投稿する" style="edgeStyle=entityRelationEdgeStyle;rounded=0;html=1;fontSize=11;startArrow=ERone;startFill=0;endArrow=ERmany;endFill=0;strokeColor=#333333;" edge="1" parent="1" source="e_users" target="e_reviews">
+          <mxGeometry relative="1" as="geometry"></mxGeometry>
+        </mxCell>
+        <mxCell id="rel4" value="予約される" style="edgeStyle=entityRelationEdgeStyle;rounded=0;html=1;fontSize=11;startArrow=ERone;startFill=0;endArrow=ERmany;endFill=0;strokeColor=#333333;" edge="1" parent="1" source="e_shops" target="e_reservations">
+          <mxGeometry relative="1" as="geometry"></mxGeometry>
+        </mxCell>
+        <mxCell id="rel5" value="予約する" style="edgeStyle=entityRelationEdgeStyle;rounded=0;html=1;fontSize=11;startArrow=ERone;startFill=0;endArrow=ERmany;endFill=0;strokeColor=#333333;" edge="1" parent="1" source="e_users" target="e_reservations">
+          <mxGeometry relative="1" as="geometry"></mxGeometry>
+        </mxCell>
+        <mxCell id="rel6" value="登録される" style="edgeStyle=entityRelationEdgeStyle;rounded=0;html=1;fontSize=11;startArrow=ERone;startFill=0;endArrow=ERmany;endFill=0;strokeColor=#333333;" edge="1" parent="1" source="e_shops" target="e_favorites">
+          <mxGeometry relative="1" as="geometry"></mxGeometry>
+        </mxCell>
+        <mxCell id="rel7" value="登録する" style="edgeStyle=entityRelationEdgeStyle;rounded=0;html=1;fontSize=11;startArrow=ERone;startFill=0;endArrow=ERmany;endFill=0;strokeColor=#333333;" edge="1" parent="1" source="e_users" target="e_favorites">
+          <mxGeometry relative="1" as="geometry"></mxGeometry>
+        </mxCell>
+        <mxCell id="rel8" value="契約する" style="edgeStyle=entityRelationEdgeStyle;rounded=0;html=1;fontSize=11;startArrow=ERone;startFill=0;endArrow=ERmany;endFill=0;strokeColor=#333333;" edge="1" parent="1" source="e_users" target="e_subscriptions">
+          <mxGeometry relative="1" as="geometry"></mxGeometry>
+        </mxCell>
+        <mxCell id="rel9" value="明細を持つ" style="edgeStyle=entityRelationEdgeStyle;rounded=0;html=1;fontSize=11;startArrow=ERone;startFill=0;endArrow=ERmany;endFill=0;strokeColor=#333333;" edge="1" parent="1" source="e_subscriptions" target="e_subscription_items">
+          <mxGeometry relative="1" as="geometry"></mxGeometry>
+        </mxCell>
+        <mxCell id="note1" value="NAGOYAMESHI ER図　｜　PK = 主キー　FK = 外部キー　UK = ユニーク制約　｜　1 : N のリレーションはカラス足（crow's foot）表記" style="text;html=1;align=left;verticalAlign=middle;fontSize=12;fontColor=#666666;" vertex="1" parent="1">
+          <mxGeometry x="60" y="1320" width="1320" height="40" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>

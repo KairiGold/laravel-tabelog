@@ -1,0 +1,115 @@
+<mxfile host="app.diagrams.net" version="24.7.5" type="device">
+  <diagram name="7. フローチャート（予約処理）" id="flowchart-reservation">
+    <mxGraphModel dx="1200" dy="800" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1300" pageHeight="1400" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="f1" value="開始&lt;br/&gt;（店舗詳細ページから&lt;br/&gt;予約フォームを開く）" style="rounded=1;arcSize=50;whiteSpace=wrap;html=1;fillColor=#d5e8d4;strokeColor=#82b366;fontFamily=Meiryo,Helvetica;fontSize=12;" vertex="1" parent="1">
+          <mxGeometry x="360" y="40" width="200" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="f2" value="来店日時・人数を&lt;br/&gt;入力して送信" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;fontFamily=Meiryo,Helvetica;fontSize=12;" vertex="1" parent="1">
+          <mxGeometry x="320" y="130" width="280" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="f3" value="入力値は正しいか？&lt;br/&gt;（必須項目・日時形式など）" style="rhombus;whiteSpace=wrap;html=1;fillColor=#ffe6cc;strokeColor=#d79b00;fontFamily=Meiryo,Helvetica;fontSize=12;" vertex="1" parent="1">
+          <mxGeometry x="300" y="230" width="320" height="110" as="geometry" />
+        </mxCell>
+        <mxCell id="f3e" value="入力エラーを&lt;br/&gt;画面に表示" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#f8cecc;strokeColor=#b85450;fontFamily=Meiryo,Helvetica;fontSize=12;" vertex="1" parent="1">
+          <mxGeometry x="900" y="250" width="260" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="f4" value="有料会員か？" style="rhombus;whiteSpace=wrap;html=1;fillColor=#ffe6cc;strokeColor=#d79b00;fontFamily=Meiryo,Helvetica;fontSize=12;" vertex="1" parent="1">
+          <mxGeometry x="300" y="380" width="320" height="110" as="geometry" />
+        </mxCell>
+        <mxCell id="f4e" value="「有料会員限定機能&lt;br/&gt;です」を表示" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#f8cecc;strokeColor=#b85450;fontFamily=Meiryo,Helvetica;fontSize=12;" vertex="1" parent="1">
+          <mxGeometry x="900" y="400" width="260" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="f4end" value="終了" style="rounded=1;arcSize=50;whiteSpace=wrap;html=1;fillColor=#d5e8d4;strokeColor=#82b366;fontFamily=Meiryo,Helvetica;fontSize=12;" vertex="1" parent="1">
+          <mxGeometry x="930" y="500" width="200" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="f5" value="予約日時が&lt;br/&gt;営業時間内か判定" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;fontFamily=Meiryo,Helvetica;fontSize=12;" vertex="1" parent="1">
+          <mxGeometry x="320" y="530" width="280" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="f6" value="営業時間内か？" style="rhombus;whiteSpace=wrap;html=1;fillColor=#ffe6cc;strokeColor=#d79b00;fontFamily=Meiryo,Helvetica;fontSize=12;" vertex="1" parent="1">
+          <mxGeometry x="300" y="630" width="320" height="110" as="geometry" />
+        </mxCell>
+        <mxCell id="f6e" value="営業時間外エラーを&lt;br/&gt;表示" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#f8cecc;strokeColor=#b85450;fontFamily=Meiryo,Helvetica;fontSize=12;" vertex="1" parent="1">
+          <mxGeometry x="900" y="650" width="260" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="f7" value="同日時の予約済み人数を&lt;br/&gt;集計し、座席数から&lt;br/&gt;空席数を算出" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;fontFamily=Meiryo,Helvetica;fontSize=12;" vertex="1" parent="1">
+          <mxGeometry x="320" y="780" width="280" height="70" as="geometry" />
+        </mxCell>
+        <mxCell id="f8" value="予約人数 ≦ 空席数か？" style="rhombus;whiteSpace=wrap;html=1;fillColor=#ffe6cc;strokeColor=#d79b00;fontFamily=Meiryo,Helvetica;fontSize=12;" vertex="1" parent="1">
+          <mxGeometry x="300" y="890" width="320" height="110" as="geometry" />
+        </mxCell>
+        <mxCell id="f8e" value="満席エラーを表示&lt;br/&gt;（時間を変えて&lt;br/&gt;お試しください）" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#f8cecc;strokeColor=#b85450;fontFamily=Meiryo,Helvetica;fontSize=12;" vertex="1" parent="1">
+          <mxGeometry x="900" y="910" width="260" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="f9" value="reservationsテーブルに&lt;br/&gt;予約情報を保存" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;fontFamily=Meiryo,Helvetica;fontSize=12;" vertex="1" parent="1">
+          <mxGeometry x="320" y="1040" width="280" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="f10" value="予約完了ページを表示" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;fontFamily=Meiryo,Helvetica;fontSize=12;" vertex="1" parent="1">
+          <mxGeometry x="320" y="1140" width="280" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="f11" value="終了" style="rounded=1;arcSize=50;whiteSpace=wrap;html=1;fillColor=#d5e8d4;strokeColor=#82b366;fontFamily=Meiryo,Helvetica;fontSize=12;" vertex="1" parent="1">
+          <mxGeometry x="360" y="1240" width="200" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="fe1" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;fontSize=11;endArrow=block;endFill=1;strokeColor=#333333;fontFamily=Meiryo,Helvetica;" edge="1" parent="1" source="f1" target="f2">
+          <mxGeometry relative="1" as="geometry"></mxGeometry>
+        </mxCell>
+        <mxCell id="fe2" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;fontSize=11;endArrow=block;endFill=1;strokeColor=#333333;fontFamily=Meiryo,Helvetica;" edge="1" parent="1" source="f2" target="f3">
+          <mxGeometry relative="1" as="geometry"></mxGeometry>
+        </mxCell>
+        <mxCell id="fe3" value="Yes" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;fontSize=11;endArrow=block;endFill=1;strokeColor=#333333;fontFamily=Meiryo,Helvetica;" edge="1" parent="1" source="f3" target="f4">
+          <mxGeometry relative="1" as="geometry"></mxGeometry>
+        </mxCell>
+        <mxCell id="fe4" value="No" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;fontSize=11;endArrow=block;endFill=1;strokeColor=#333333;fontFamily=Meiryo,Helvetica;" edge="1" parent="1" source="f3" target="f3e">
+          <mxGeometry relative="1" as="geometry"></mxGeometry>
+        </mxCell>
+        <mxCell id="fe5" value="入力フォームに戻る" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;fontSize=11;endArrow=block;endFill=1;strokeColor=#b85450;dashed=1;fontFamily=Meiryo,Helvetica;" edge="1" parent="1" source="f3e" target="f2">
+          <mxGeometry relative="1" as="geometry"></mxGeometry>
+        </mxCell>
+        <mxCell id="fe6" value="Yes" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;fontSize=11;endArrow=block;endFill=1;strokeColor=#333333;fontFamily=Meiryo,Helvetica;" edge="1" parent="1" source="f4" target="f5">
+          <mxGeometry relative="1" as="geometry"></mxGeometry>
+        </mxCell>
+        <mxCell id="fe7" value="No" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;fontSize=11;endArrow=block;endFill=1;strokeColor=#333333;fontFamily=Meiryo,Helvetica;" edge="1" parent="1" source="f4" target="f4e">
+          <mxGeometry relative="1" as="geometry"></mxGeometry>
+        </mxCell>
+        <mxCell id="fe8" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;fontSize=11;endArrow=block;endFill=1;strokeColor=#333333;fontFamily=Meiryo,Helvetica;" edge="1" parent="1" source="f4e" target="f4end">
+          <mxGeometry relative="1" as="geometry"></mxGeometry>
+        </mxCell>
+        <mxCell id="fe9" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;fontSize=11;endArrow=block;endFill=1;strokeColor=#333333;fontFamily=Meiryo,Helvetica;" edge="1" parent="1" source="f5" target="f6">
+          <mxGeometry relative="1" as="geometry"></mxGeometry>
+        </mxCell>
+        <mxCell id="fe10" value="Yes" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;fontSize=11;endArrow=block;endFill=1;strokeColor=#333333;fontFamily=Meiryo,Helvetica;" edge="1" parent="1" source="f6" target="f7">
+          <mxGeometry relative="1" as="geometry"></mxGeometry>
+        </mxCell>
+        <mxCell id="fe11" value="No" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;fontSize=11;endArrow=block;endFill=1;strokeColor=#333333;fontFamily=Meiryo,Helvetica;" edge="1" parent="1" source="f6" target="f6e">
+          <mxGeometry relative="1" as="geometry"></mxGeometry>
+        </mxCell>
+        <mxCell id="fe12" value="入力フォームに戻る" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;fontSize=11;endArrow=block;endFill=1;strokeColor=#b85450;dashed=1;fontFamily=Meiryo,Helvetica;" edge="1" parent="1" source="f6e" target="f2">
+          <mxGeometry relative="1" as="geometry"></mxGeometry>
+        </mxCell>
+        <mxCell id="fe13" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;fontSize=11;endArrow=block;endFill=1;strokeColor=#333333;fontFamily=Meiryo,Helvetica;" edge="1" parent="1" source="f7" target="f8">
+          <mxGeometry relative="1" as="geometry"></mxGeometry>
+        </mxCell>
+        <mxCell id="fe14" value="Yes" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;fontSize=11;endArrow=block;endFill=1;strokeColor=#333333;fontFamily=Meiryo,Helvetica;" edge="1" parent="1" source="f8" target="f9">
+          <mxGeometry relative="1" as="geometry"></mxGeometry>
+        </mxCell>
+        <mxCell id="fe15" value="No" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;fontSize=11;endArrow=block;endFill=1;strokeColor=#333333;fontFamily=Meiryo,Helvetica;" edge="1" parent="1" source="f8" target="f8e">
+          <mxGeometry relative="1" as="geometry"></mxGeometry>
+        </mxCell>
+        <mxCell id="fe16" value="入力フォームに戻る" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;fontSize=11;endArrow=block;endFill=1;strokeColor=#b85450;dashed=1;fontFamily=Meiryo,Helvetica;" edge="1" parent="1" source="f8e" target="f2">
+          <mxGeometry relative="1" as="geometry"></mxGeometry>
+        </mxCell>
+        <mxCell id="fe17" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;fontSize=11;endArrow=block;endFill=1;strokeColor=#333333;fontFamily=Meiryo,Helvetica;" edge="1" parent="1" source="f9" target="f10">
+          <mxGeometry relative="1" as="geometry"></mxGeometry>
+        </mxCell>
+        <mxCell id="fe18" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;fontSize=11;endArrow=block;endFill=1;strokeColor=#333333;fontFamily=Meiryo,Helvetica;" edge="1" parent="1" source="f10" target="f11">
+          <mxGeometry relative="1" as="geometry"></mxGeometry>
+        </mxCell>
+        <mxCell id="fnote" value="フローチャート：店舗予約処理（会員側）　｜　条件分岐が多いためフローチャートを作成" style="text;html=1;align=left;verticalAlign=middle;fontSize=12;fontColor=#666666;fontFamily=Meiryo,Helvetica;" vertex="1" parent="1">
+          <mxGeometry x="320" y="1320" width="900" height="40" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
